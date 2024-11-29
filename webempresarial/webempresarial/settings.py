@@ -47,12 +47,9 @@ INSTALLED_APPS = [
     'ckeditor_uploader',
     'contact',
 ]
-#ckeditor
-MEDIA_URL = '/media/'
-
-CKEDITOR_UPLOAD_PATH = "uploads/"
 
 
+ROOT_URLCONF = "webempresarial.urls"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -66,7 +63,7 @@ MIDDLEWARE = [
     
 ]
 
-ROOT_URLCONF = "webempresarial.urls"
+
 
 TEMPLATES = [
     {
@@ -148,6 +145,8 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
 #config media
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
