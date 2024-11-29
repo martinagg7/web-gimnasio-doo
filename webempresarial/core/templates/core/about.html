@@ -2,26 +2,111 @@
 
 {% load static %}
 
-{% block title %}Historia | La Caffettiera{% endblock %}
+{% block title %}Servicios | DeFIT360{% endblock %}
 
 {% block content %}
-<section class="page-section about-heading">
+<section class="page-section">
   <div class="container">
-    <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'core/img/about.jpg' %}" alt="">
-    <div class="about-heading-content">
-      <div class="row">
-        <div class="col-xl-9 col-lg-10 mx-auto">
-          <div class="bg-faded rounded p-5">
-            <h2 class="section-heading mb-4">
-              <span class="section-heading-upper">Tradición familiar italiana</span>
-              <span class="section-heading-lower">Nuestra historia</span>
-            </h2>
-            <p>Fundada en 1987 consectetur adipiscing elit. Donec leo dui, vehicula vel dapibus ac, tempus non enim. Nunc tempor vel lacus vel gravida. Nam sit amet pellentesque mi.</p>
-            <p>Curabitur efficitur pellentesque tellus nec volutpat. In viverra mattis sem, facilisis condimentum mi rutrum ut. Quisque ut pellentesque dui. Nullam eu vehicula metus. Pellentesque id interdum elit. Aenean in efficitur enim.</p>
+    <!-- Sección de Introducción -->
+    <div class="text-center mb-5" style="background-color: rgba(255, 255, 255, 0.85); padding: 40px; border-radius: 10px;">
+      <h2 class="section-heading mb-4" style="font-size: 2.5rem; font-weight: 600;">
+        <span class="section-heading-upper" style="font-size: 1.5rem;">Transforma tu cuerpo</span>
+        <span class="section-heading-lower">Nuestros Servicios</span>
+      </h2>
+      <p class="mb-5" style="font-size: 1.1rem; font-weight: 400;">En DeFIT360 tenemos los mejores servicios para que logres tus objetivos físicos y de bienestar. Desde entrenamiento personalizado hasta recuperación y fisioterapia.</p>
+    </div>
+
+    <!-- Servicios -->
+    <div class="row text-center mb-5">
+      <!-- Bloque 1: Entrenamiento Personalizado -->
+      <div class="col-md-4 mb-4">
+        <div class="service-card bg-white p-5" style="box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+          <img src="{% static 'core/img/entrenamiento.jpg' %}" alt="Entrenamiento Personalizado" class="img-fluid mb-3" style="border-radius: 8px;">
+          <h4 class="service-title" style="font-size: 1.5rem;">Entrenamiento Personalizado</h4>
+          <p style="font-size: 1rem;">Entrenamiento a medida con un entrenador personal que te guiará en cada paso.</p>
+        </div>
+      </div>
+      <!-- Bloque 2: Nutrición Deportiva -->
+      <div class="col-md-4 mb-4">
+        <div class="service-card bg-white p-5" style="box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+          <img src="{% static 'core/img/nutricion.jpg' %}" alt="Nutrición Deportiva" class="img-fluid mb-3" style="border-radius: 8px;">
+          <h4 class="service-title" style="font-size: 1.5rem;">Nutrición Deportiva</h4>
+          <p style="font-size: 1rem;">Planificación nutricional diseñada para potenciar tu rendimiento en el gimnasio.</p>
+        </div>
+      </div>
+      <!-- Bloque 3: Recuperación y Fisioterapia -->
+      <div class="col-md-4 mb-4">
+        <div class="service-card bg-white p-5" style="box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+          <img src="{% static 'core/img/recuperacion.jpg' %}" alt="Recuperación y Fisioterapia" class="img-fluid mb-3" style="border-radius: 8px;">
+          <h4 class="service-title" style="font-size: 1.5rem;">Recuperación y Fisioterapia</h4>
+          <p style="font-size: 1rem;">Recuperación activa con fisioterapia especializada para lesiones y dolores musculares.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Planes Personalizados con Fondo Gris Claro -->
+    <div class="text-center mt-5 mb-5" style="background-color: rgba(240, 240, 240, 0.8); padding: 40px 0; border-radius: 10px;">
+      <div class="service-card bg-white p-5" style="box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+        <h2 class="section-heading mb-4" style="font-size: 2.5rem;">
+          <span class="section-heading-upper" style="font-size: 1.5rem;">Entrenamiento a medida</span>
+          <span class="section-heading-lower">Planes Personalizados</span>
+        </h2>
+        <p class="mb-5" style="font-size: 1.1rem;">Nuestros planes se adaptan a tus objetivos y necesidades. Con el acompañamiento de un entrenador personal, lograrás tus metas de forma efectiva y segura.</p>
+        <div class="row">
+          <div class="col-md-6">
+            <h4 style="font-size: 1.5rem;">Entrenador Personal</h4>
+            <p style="font-size: 1rem;">Entrena con un plan personalizado que se ajusta a tus metas. Acompañamiento constante y atención individual.</p>
+          </div>
+          <div class="col-md-6">
+            <h4 style="font-size: 1.5rem;">Seguimiento Continuo</h4>
+            <p style="font-size: 1rem;">Te ayudamos a mantenerte motivado y enfocado con seguimiento diario y ajustes a tu plan de entrenamiento.</p>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Conoce a Nuestro Equipo con Fondo Gris Claro -->
+    <div class="text-center mt-5" style="background-color: rgba(240, 240, 240, 0.8); padding: 40px 0; border-radius: 10px;">
+      <h2 class="section-heading mb-4" style="font-size: 2.5rem;">
+        <span class="section-heading-upper" style="font-size: 1.5rem;">Nuestro Equipo</span>
+        <span class="section-heading-lower">Conoce a los expertos</span>
+      </h2>
+      <p class="mb-5" style="font-size: 1.1rem;">Nuestro equipo de entrenadores, nutricionistas y fisioterapeutas está aquí para ayudarte a alcanzar tus objetivos.</p>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="{% static 'core/img/equipo1.jpg' %}" alt="Entrenador 1" class="img-fluid mb-3" style="border-radius: 8px;">
+          <h4 style="font-size: 1.5rem;">Juan Pérez</h4>
+          <p style="font-size: 1rem;">Entrenador Personal</p>
+        </div>
+        <div class="col-md-4">
+          <img src="{% static 'core/img/equipo2.jpg' %}" alt="Entrenador 2" class="img-fluid mb-3" style="border-radius: 8px;">
+          <h4 style="font-size: 1.5rem;">Ana González</h4>
+          <p style="font-size: 1rem;">Nutricionista Deportiva</p>
+        </div>
+        <div class="col-md-4">
+          <img src="{% static 'core/img/equipo3.jpg' %}" alt="Entrenador 3" class="img-fluid mb-3" style="border-radius: 8px;">
+          <h4 style="font-size: 1.5rem;">Pedro López</h4>
+          <p style="font-size: 1rem;">Fisioterapeuta</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ubicación del Centro -->
+    <div class="text-center mt-5" style="background-color: rgba(240, 240, 240, 0.8); padding: 40px 0; border-radius: 10px;">
+      <h2 class="section-heading mb-4" style="font-size: 2.5rem;">
+        <span class="section-heading-upper" style="font-size: 1.5rem;">Nuestro Centro</span>
+        <span class="section-heading-lower">Ubicación</span>
+      </h2>
+      <p class="mb-5" style="font-size: 1.1rem;">Visítanos en nuestro centro DeFIT360, ubicado en el corazón de la ciudad, donde podrás disfrutar de todas nuestras instalaciones y servicios.</p>
+      <div class="row">
+        <div class="col-md-12">
+          <h4 style="font-size: 1.5rem;">Centro DeFIT360</h4>
+          <p style="font-size: 1rem;">C. Sierra de Guadarrama, 10, 28691 Villanueva de la Cañada, Madrid.</p>
+          <img src="{% static 'core/img/mapa_centro.jpg' %}" alt="Ubicación Centro" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
-{% endblock %}
+{% endblock%}
