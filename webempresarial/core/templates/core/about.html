@@ -2,139 +2,156 @@
 
 {% load static %}
 
+<link rel="stylesheet" href="{% static 'core/css/servicios.css' %}">
+
+
 {% block title %}Servicios | DeFIT360{% endblock %}
+
+
 
 {% block content %}
 <section class="page-section">
   <div class="container">
     <!-- Sección de Introducción -->
-    <div class="text-center mb-5" style="background-color: rgba(255, 255, 255, 0.85); padding: 40px; border-radius: 10px;">
-      <h2 class="section-heading mb-4" style="font-size: 2.5rem; font-weight: 600;">
-        <span class="section-heading-upper" style="font-size: 1.5rem;">Transforma tu cuerpo</span>
+    <div class="text-center mb-5 intro-section">
+      <h2 class="section-heading mb-4">
+        <span class="section-heading-upper">Transforma tu cuerpo</span>
         <span class="section-heading-lower">Nuestros Servicios</span>
       </h2>
-      <p class="mb-5" style="font-size: 1.1rem; font-weight: 400;">En DeFIT360 tenemos los mejores servicios para que logres tus objetivos físicos y de bienestar. Desde entrenamiento personalizado hasta recuperación y fisioterapia.</p>
+      <p class="mb-5">En DeFIT360 tenemos los mejores servicios para que logres tus objetivos físicos y de bienestar. Desde entrenamiento personalizado hasta recuperación y fisioterapia.</p>
     </div>
 
     <!-- Servicios -->
     <div class="row text-center mb-5">
       <!-- Bloque 1: Entrenamiento Personalizado -->
       <div class="col-md-4 mb-4">
-        <div class="service-card bg-white p-4 h-100" style="box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+        <div class="service-card h-100">
           <div class="service-image" style="background-image: url('{% static 'core/img/entrenamiento.jpg' %}');"></div>
-          <h4 class="service-title mt-3" style="font-size: 1.5rem;">Entrenamiento Personalizado</h4>
-          <p style="font-size: 1rem;">Entrenamiento a medida con un entrenador personal que te guiará en cada paso.</p>
+          <div class="p-3">
+            <h4 class="service-title mt-3">Entrenamiento Personalizado</h4>
+            <p>Entrenamiento a medida con un entrenador personal que te guiará en cada paso.</p>
+          </div>
         </div>
       </div>
       <!-- Bloque 2: Nutrición Deportiva -->
       <div class="col-md-4 mb-4">
-        <div class="service-card bg-white p-4 h-100" style="box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+        <div class="service-card h-100">
           <div class="service-image" style="background-image: url('{% static 'core/img/nutricion.jpg' %}');"></div>
-          <h4 class="service-title mt-3" style="font-size: 1.5rem;">Nutrición Deportiva</h4>
-          <p style="font-size: 1rem;">Planificación nutricional diseñada para potenciar tu rendimiento en el gimnasio.</p>
+          <div class="p-3">
+            <h4 class="service-title mt-3">Nutrición Deportiva</h4>
+            <p>Planificación nutricional diseñada para potenciar tu rendimiento en el gimnasio.</p>
+          </div>
         </div>
       </div>
       <!-- Bloque 3: Recuperación y Fisioterapia -->
       <div class="col-md-4 mb-4">
-        <div class="service-card bg-white p-4 h-100" style="box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+        <div class="service-card h-100">
           <div class="service-image" style="background-image: url('{% static 'core/img/recuperacion.jpg' %}');"></div>
-          <h4 class="service-title mt-3" style="font-size: 1.5rem;">Recuperación y Fisioterapia</h4>
-          <p style="font-size: 1rem;">Recuperación activa con fisioterapia especializada para lesiones y dolores musculares.</p>
+          <div class="p-3">
+            <h4 class="service-title mt-3">Recuperación y Fisioterapia</h4>
+            <p>Recuperación activa con fisioterapia especializada para lesiones y dolores musculares.</p>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Planes Personalizados con Imagen de Fondo -->
-    <div class="text-center mt-5 mb-5" style="position: relative; padding: 60px 20px; border-radius: 10px; background-image: url('{% static 'core/img/planes_personalizados.jpg' %}'); background-size: cover; background-position: center;">
-      <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); border-radius: 10px;"></div>
-      <div class="service-card text-white p-5" style="position: relative; z-index: 1;">
-        <h2 class="section-heading mb-4" style="font-size: 2.5rem;">
-          <span class="section-heading-upper" style="font-size: 1.5rem;">Entrenamiento a medida</span>
+    <div class="text-center mt-5 mb-5 plans-section" style="background-image: url('{% static 'core/img/planes_personalizados.jpg' %}');">
+      <div class="overlay"></div>
+      <div class="content p-5">
+        <h2 class="section-heading mb-4">
+          <span class="section-heading-upper">Entrenamiento a medida</span>
           <span class="section-heading-lower">Planes Personalizados</span>
         </h2>
-        <p class="mb-5" style="font-size: 1.1rem;">Nuestros planes se adaptan a tus objetivos y necesidades. Con el acompañamiento de un entrenador personal, lograrás tus metas de forma efectiva y segura.</p>
+        <p class="mb-5">Nuestros planes se adaptan a tus objetivos y necesidades. Con el acompañamiento de un entrenador personal, lograrás tus metas de forma efectiva y segura.</p>
         <div class="row">
           <div class="col-md-6">
-            <h4 style="font-size: 1.5rem;">Entrenador Personal</h4>
-            <p style="font-size: 1rem;">Entrena con un plan personalizado que se ajusta a tus metas. Acompañamiento constante y atención individual.</p>
+            <h4>Entrenador Personal</h4>
+            <p>Entrena con un plan personalizado que se ajusta a tus metas. Acompañamiento constante y atención individual.</p>
           </div>
           <div class="col-md-6">
-            <h4 style="font-size: 1.5rem;">Seguimiento Continuo</h4>
-            <p style="font-size: 1rem;">Te ayudamos a mantenerte motivado y enfocado con seguimiento diario y ajustes a tu plan de entrenamiento.</p>
+            <h4>Seguimiento Continuo</h4>
+            <p>Te ayudamos a mantenerte motivado y enfocado con seguimiento diario y ajustes a tu plan de entrenamiento.</p>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Conoce a Nuestro Equipo -->
-    <div class="text-center mt-5 mb-5" style="background-color: rgba(240, 240, 240, 0.8); padding: 40px 0; border-radius: 10px;">
-      <h2 class="section-heading mb-4" style="font-size: 2.5rem;">
-        <span class="section-heading-upper" style="font-size: 1.5rem;">Nuestro Equipo</span>
+    <div class="text-center mt-5 mb-5 team-section">
+      <h2 class="section-heading mb-4">
+        <span class="section-heading-upper">Nuestro Equipo</span>
         <span class="section-heading-lower">Conoce a los expertos</span>
       </h2>
-      <p class="mb-5" style="font-size: 1.1rem;">Nuestro equipo de entrenadores, nutricionistas y fisioterapeutas está aquí para ayudarte a alcanzar tus objetivos.</p>
+      <p class="mb-5">Nuestro equipo de entrenadores, nutricionistas y fisioterapeutas está aquí para ayudarte a alcanzar tus objetivos.</p>
       <div class="row">
         <div class="col-md-4 mb-4">
           <div class="team-member">
             <div class="team-image" style="background-image: url('{% static 'core/img/equipo1.jpg' %}');"></div>
-            <h4 class="mt-3" style="font-size: 1.5rem;">Juan Pérez</h4>
-            <p style="font-size: 1rem;">Entrenador Personal</p>
+            <div class="p-3">
+              <h4 class="mt-3">Juan Pérez</h4>
+              <p>Entrenador Personal</p>
+            </div>
           </div>
         </div>
         <div class="col-md-4 mb-4">
           <div class="team-member">
             <div class="team-image" style="background-image: url('{% static 'core/img/equipo2.jpg' %}');"></div>
-            <h4 class="mt-3" style="font-size: 1.5rem;">Ana González</h4>
-            <p style="font-size: 1rem;">Nutricionista Deportiva</p>
+            <div class="p-3">
+              <h4 class="mt-3">Ana González</h4>
+              <p>Nutricionista Deportiva</p>
+            </div>
           </div>
         </div>
         <div class="col-md-4 mb-4">
           <div class="team-member">
             <div class="team-image" style="background-image: url('{% static 'core/img/equipo3.jpg' %}');"></div>
-            <h4 class="mt-3" style="font-size: 1.5rem;">Pedro López</h4>
-            <p style="font-size: 1rem;">Fisioterapeuta</p>
+            <div class="p-3">
+              <h4 class="mt-3">Pedro López</h4>
+              <p>Fisioterapeuta</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Reseñas de Clientes -->
-    <div class="text-center mt-5" style="background-color: rgba(240, 240, 240, 0.8); padding: 40px 40px; border-radius: 10px;">
-      <h2 class="section-heading mb-4" style="font-size: 2.5rem;">
-        <span class="section-heading-upper" style="font-size: 1.5rem;">Lo que dicen nuestros clientes</span>
+    <div class="text-center mt-5 reviews-section">
+      <h2 class="section-heading mb-4">
+        <span class="section-heading-upper">Lo que dicen nuestros clientes</span>
         <span class="section-heading-lower">Reseñas de Clientes</span>
       </h2>
       <div class="row">
         <!-- Reseña 1 -->
         <div class="col-md-6 mb-4">
-          <div class="review-card bg-white p-4 h-100" style="box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); border-radius: 10px;">
-            <div class="d-flex align-items-center mb-3">
+          <div class="review-card h-100">
+            <div class="d-flex align-items-center mb-3 p-3">
               <div class="review-image" style="background-image: url('{% static 'core/img/cliente1.jpg' %}');"></div>
               <div class="ml-3">
-                <h5 style="margin-bottom: 0;">María Fernández</h5>
+                <h5>María Fernández</h5>
                 <div>
                   <!-- Estrellas -->
                   <span style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                 </div>
               </div>
             </div>
-            <p style="font-size: 1rem;">"Gracias a DeFIT360 he logrado mis objetivos de forma segura y efectiva. El equipo es increíble."</p>
+            <p class="p-3">"Gracias a DeFIT360 he logrado mis objetivos de forma segura y efectiva. El equipo es increíble."</p>
           </div>
         </div>
         <!-- Reseña 2 -->
         <div class="col-md-6 mb-4">
-          <div class="review-card bg-white p-4 h-100" style="box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); border-radius: 10px;">
-            <div class="d-flex align-items-center mb-3">
+          <div class="review-card h-100">
+            <div class="d-flex align-items-center mb-3 p-3">
               <div class="review-image" style="background-image: url('{% static 'core/img/cliente2.jpg' %}');"></div>
               <div class="ml-3">
-                <h5 style="margin-bottom: 0;">Carlos Sánchez</h5>
+                <h5>Carlos Sánchez</h5>
                 <div>
                   <!-- Estrellas -->
                   <span style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
                 </div>
               </div>
             </div>
-            <p style="font-size: 1rem;">"El plan nutricional y el seguimiento han sido clave en mi progreso. Muy recomendable."</p>
+            <p class="p-3">"El plan nutricional y el seguimiento han sido clave en mi progreso. Muy recomendable."</p>
           </div>
         </div>
       </div>
@@ -142,42 +159,4 @@
 
   </div>
 </section>
-
-<!-- Estilos CSS adicionales -->
-<style>
-  /* Imágenes de servicios */
-  .service-image {
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-position: center top;
-    border-radius: 8px;
-  }
-
-  /* Imágenes del equipo */
-  .team-image {
-    width: 100%;
-    height: 250px;
-    background-size: cover;
-    background-position: center top;
-    border-radius: 8px;
-  }
-
-  /* Imágenes de reseñas */
-  .review-image {
-    width: 60px;
-    height: 60px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-    flex-shrink: 0;
-  }
-
-  /* Alinear correctamente en dispositivos pequeños */
-  @media (max-width: 767px) {
-    .ml-3 {
-      margin-left: 15px !important;
-    }
-  }
-</style>
 {% endblock %}

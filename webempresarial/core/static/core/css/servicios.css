@@ -1,0 +1,147 @@
+/* Estilos para la página de servicios */
+
+/* Sección de introducción */
+.intro-section {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  /* Servicios */
+  .service-card {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    padding: 4px; /* Reemplaza p-4 de Bootstrap */
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+  }
+  
+  .service-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center top;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  /* Sección de planes personalizados */
+  .plans-section {
+    position: relative;
+    padding: 60px 20px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .plans-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+  }
+  
+  .plans-section .content {
+    position: relative;
+    z-index: 1;
+    color: white;
+  }
+  
+  .plans-section h2 {
+    font-size: 2.5rem;
+  }
+  
+  .plans-section .section-heading-upper {
+    font-size: 1.5rem;
+  }
+  
+  /* Sección del equipo */
+  .team-section {
+    background-color: rgba(240, 240, 240, 0.8);
+    padding: 40px 0;
+    border-radius: 10px;
+  }
+  
+  .team-image {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center top;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .team-member h4 {
+    font-size: 1.5rem;
+  }
+  
+  .team-member p {
+    font-size: 1rem;
+  }
+  
+  /* Sección de reseñas */
+  .reviews-section {
+    background-color: rgba(240, 240, 240, 0.8);
+    padding: 40px 40px;
+    border-radius: 10px;
+  }
+  
+  .review-card {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    padding: 4px; /* Reemplaza p-4 de Bootstrap */
+  }
+  
+  .review-image {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  
+  .review-card h5 {
+    margin-bottom: 0;
+  }
+  
+  .review-card p {
+    font-size: 1rem;
+  }
+  
+  /* Sección de encabezados */
+  .section-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+  .section-heading-upper {
+    font-size: 1.5rem;
+  }
+  
+  /* Ajustes generales */
+  .text-center {
+    text-align: center;
+  }
+  
+  .mb-5 {
+    margin-bottom: 3rem !important;
+  }
+  
+  .mt-5 {
+    margin-top: 3rem !important;
+  }
+  
+  /* Alinear correctamente en dispositivos pequeños */
+  @media (max-width: 767px) {
+    .ml-3 {
+      margin-left: 15px !important;
+    }
+  }
