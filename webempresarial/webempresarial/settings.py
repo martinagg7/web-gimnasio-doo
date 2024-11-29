@@ -147,9 +147,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = "static/"
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# Ruta para acceder a archivos estáticos en el navegador
+STATIC_URL = '/static/'
 
+# Ruta donde Django almacenará los archivos estáticos en producción
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# Directorios adicionales para archivos estáticos
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
