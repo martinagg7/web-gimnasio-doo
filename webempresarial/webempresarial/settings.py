@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-dhwqzpp3pnty^o6^lt$x0ef$5wh9kfdc%!-^g5d-2ha*@lx3@!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -75,8 +75,10 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
+    
+
 
 ROOT_URLCONF = "webempresarial.urls"
 
@@ -97,7 +99,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "webempresarial.wsgi.application"
+WSGI_APPLICATION = "webempresarial.wsgi.app"
 
 
 # Database
@@ -146,6 +148,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = "static/"
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
