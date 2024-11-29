@@ -49,8 +49,6 @@ INSTALLED_APPS = [
 ]
 
 
-ROOT_URLCONF = "webempresarial.urls"
-
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -63,6 +61,7 @@ MIDDLEWARE = [
     
 ]
 
+ROOT_URLCONF = "webempresarial.urls"
 
 
 TEMPLATES = [
